@@ -8,7 +8,7 @@
     <IOStep name="readInData">
       <Input  class="Files"       type=""             >rawDataFile</Input>
       <Output class="DataObjects" type="HistorySet"   >raw_data</Output>
-      <Output class="OutStreams"  type="Plot"         >rawData</Output>
+      <Output class="OutStreams"  type="Plot"         >Fall Raw Data Graph</Output>
     </IOStep>
     <PostProcess name="typicalHistory">
       <Input  class='DataObjects' type='HistorySet'   >raw_data</Input>
@@ -43,8 +43,8 @@
   </DataObjects>
 
   <Files>
-    <Input name="rawDataFile">raw_data_summer_.csv</Input>
-    <Input name="romfile">ARMA_summer.pk</Input>
+    <Input name="rawDataFile">raw_data_fall.csv</Input>
+    <Input name="romfile">ARMA_fall.pk</Input>
   </Files>
 
   <Models>
@@ -77,7 +77,7 @@
           <source>stats</source>
           <what>input,output</what>
       </Print>
-      <Plot name="rawData">
+      <Plot name="Fall Raw Data Graph">
           <plotSettings>
               <plot>
                   <type>line</type>
