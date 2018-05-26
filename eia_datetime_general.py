@@ -4,7 +4,7 @@ import os
 #Create a csv file to write the data
 def writeFile(outfile, monthB, monthE, dayB, dayE):
     #Open the Arizona Public Service Demand data downloaded from EIA
-    dataset = csv.reader(open('RAVEN/APS_data_1.csv', newline=''), delimiter=',')
+    dataset = csv.reader(open('APS_generation.csv', newline=''), delimiter=',')
     with open(outfile, 'w') as subfile:
         # Rewrite the first column in the eia data so that it gives the year, the month and day, and the times
         subfile.writelines('Time,Demand'+os.linesep)
@@ -27,7 +27,7 @@ def writeFile(outfile, monthB, monthE, dayB, dayE):
 
 def writeWinter(outfile, monthB, monthE, dayB, dayE):
     #Open the Arizona Public Service Demand data downloaded from EIA
-    dataset = csv.reader(open('RAVEN/APS_data_1.csv', newline=''), delimiter=',')
+    dataset = csv.reader(open('APS_generation.csv', newline=''), delimiter=',')
     with open(outfile, 'w') as subfile:
         # Rewrite the first column in the eia data so that it gives the year, the month and day, and the times
         subfile.writelines('Time,Demand'+os.linesep)
@@ -49,7 +49,7 @@ def writeWinter(outfile, monthB, monthE, dayB, dayE):
                     subfile.writelines('{0},{1}'.format(row[0][-5:-3], row[1]+os.linesep))
 
 
-Spring = writeFile('RAVEN/SpringEIA.csv', 3, 6, 20, 20)
-Summer = writeFile('RAVEN/SummerEIA.csv', 6, 9, 22, 21)
-Fall =  writeFile('RAVEN/FallEIA.csv', 9, 12, 22, 21)
-Winter = writeWinter('RAVEN/WinterEIA.csv', 12, 3, 21, 19)
+Spring = writeFile('SPRING/SpringGen.csv', 3, 6, 20, 20)
+Summer = writeFile('SUMMER/SummerGen.csv', 6, 9, 22, 21)
+Fall =  writeFile('FALL/FallGen.csv', 9, 12, 22, 21)
+Winter = writeWinter('WINTER/WinterGen.csv', 12, 3, 21, 19)

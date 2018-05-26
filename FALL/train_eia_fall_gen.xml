@@ -43,8 +43,8 @@
   </DataObjects>
 
   <Files>
-    <Input name="rawDataFile">raw_data_fall.csv</Input>
-    <Input name="romfile">ARMA_fall.pk</Input>
+    <Input name="rawDataFile">FallGen.csv</Input>
+    <Input name="romfile">ARMA_fall_gen.pk</Input>
   </Files>
 
   <Models>
