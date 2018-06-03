@@ -57,7 +57,7 @@
   </DataObjects>
 
   <Files>
-    <Input name="romfile">ARMA_winter.pk</Input>
+    <Input name="romfile">ARMA_winter_gen.pk</Input>
   </Files>
 
   <Samplers>
