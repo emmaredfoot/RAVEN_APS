@@ -77,7 +77,7 @@
           <source>stats</source>
           <what>input,output</what>
       </Print>
-      <Plot name="Fall Raw Data Generation Graph">
+      <Plot name="Fall Raw Data Graph">
           <plotSettings>
               <plot>
                   <type>line</type>
@@ -87,6 +87,8 @@
                   <ylabel>Demand</ylabel>
                   <interpPointsX>604800</interpPointsX>
               </plot>
+              <xlabel>Time (hrs)</xlabel>
+              <ylabel>Demand (MWe)</ylabel>
           </plotSettings>
           <actions>
               <how>screen,png</how>
